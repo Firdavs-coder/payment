@@ -80,7 +80,7 @@ def cancel(request):
 def stripe_webhook(request):
     payload = request.body
     sig_header = request.META['HTTP_STRIPE_SIGNATURE']
-    endpoint_secret = 'whsec_3QBNsznrOjwi4K6A7nJhONkFaVo1Vgd5'
+    endpoint_secret = 'whsec_...'
 
     try:
         event = stripe.Webhook.construct_event(
